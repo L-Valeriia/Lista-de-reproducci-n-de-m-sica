@@ -14,14 +14,19 @@
   </ul>
 
   <!-- Formulario para agregar una nueva canción -->
-  <form id="formulario-cancion">
+    <ul id="formulario-cancion"></ul>
     <h2>Agregar nueva canción</h2>
     <input type="text" id="titulo" placeholder="Título de la canción" required>
     <input type="text" id="artista" placeholder="Artista" required>
     <input type="number" id="duracion" placeholder="Duración (en segundos)" required>
     <input type="text" id="genero" placeholder="Género" required>
-    <button onclick ="submit">Agregar canción</button>
-  </form>
+    <button onclick="agregarCancion();" >Agregar canción</button>
+    <button onclick="cancionesAñadidas();" >Lista de canciones</button>
+    <div id="listaCompleta"></div>
+    
+    <ul id="listaCanciones"></ul>
+
+  
 
   <!-- Tu archivo JS personalizado -->
   <script src="playlist.js"></script>
