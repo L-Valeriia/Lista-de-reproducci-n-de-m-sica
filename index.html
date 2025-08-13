@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Playlist</title>
+</head>
+<body>
+
+  <h1>🎵 Mi Playlist</h1>
+
+  <!-- Lista donde se mostrarán las canciones -->
+  <ul id="lista-canciones">
+    <!-- Aquí se insertarán los elementos <li> con cada canción -->
+  </ul>
+
+  <!-- Formulario para agregar una nueva canción -->
+  <form id="formulario-cancion">
+    <h2>Agregar nueva canción</h2>
+    <input type="text" id="titulo" placeholder="Título de la canción" required>
+    <input type="text" id="artista" placeholder="Artista" required>
+    <input type="number" id="duracion" placeholder="Duración (en segundos)" required>
+    <input type="text" id="genero" placeholder="Género" required>
+    <button onclick ="submit">Agregar canción</button>
+  </form>
+
+  <!-- Tu archivo JS personalizado -->
+  <script src="playlist.js"></script>
+
+</body>
+</html>
